@@ -1,29 +1,18 @@
-import React from "react"
-import {
-  View,
-  Image,
-  Text,
-  ScrollView,
-  SafeAreaView,
-  StyleSheet
-} from "react-native"
+import React from "react";
+import { View, Image, Text, ScrollView, SafeAreaView, StyleSheet } from "react-native";
 
 const WelcomeScreen = () => {
-  return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView contentContainerStyle={styles.scrollView}>
+  return <SafeAreaView style={styles.container}>
+      <ScrollView contentContainerStyle={styles.scrollView} style={styles.PFdMYvNA}>
         <View style={styles.group} />
         <View style={styles.group}>
-          <Image style={styles.logo} source={require("./logo.png")} />
-          <Text style={styles.text}>
-            Let's build something amazing together!
-          </Text>
+          <Image style={styles.logo} source={require("./Peddly-Logo-10.png")} />
+          <Text style={styles.text}>{"Think Different.\nThink Peddly.\n            "}</Text>
         </View>
-        <Text style={styles.footer}>Made with ❤️ by Crowdbotics</Text>
+        <Text style={styles.footer}>{"Peddly, Inc."}</Text>
       </ScrollView>
-    </SafeAreaView>
-  )
-}
+    </SafeAreaView>;
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -50,15 +39,17 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 28,
     color: "#828AB0",
-    fontWeight: 700
+    fontWeight: "300"
   },
   footer: {
     textAlign: "center",
     fontSize: 18,
     color: "#828AB0",
-    fontWeight: 700,
+    fontWeight: "200",
     marginBottom: 20
+  },
+  PFdMYvNA: {
+    backgroundColor: "#F8F0FB"
   }
-})
-
-export default WelcomeScreen
+});
+export default WelcomeScreen;
