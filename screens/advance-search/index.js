@@ -38,7 +38,7 @@ const AdvanceSearchScreen = params => {
     setRatingImages([require("./assets/1star.png"), require("./assets/2star.png"), require("./assets/3star.png"), require("./assets/4star.png"), require("./assets/5star.png")]);
   }, []);
   return <SafeAreaView style={styles.container}>
-      <ScrollView>
+      <ScrollView style={styles.cBpyakNC}>
         <Modal animationType="slide" transparent={true} visible={modalVisible} onRequestClose={() => {
         Alert.alert("Modal has been closed.");
         setModalVisible(!modalVisible);
@@ -195,6 +195,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginVertical: 10,
     marginBottom: 30
+  },
+  cBpyakNC: {
+    borderColor: "#0267C1"
   }
 });
 export default AdvanceSearchScreen;
